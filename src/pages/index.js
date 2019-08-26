@@ -1,3 +1,13 @@
-import React from 'react';
 
-export default () => <div>Hello Frontend Masters!</div>;
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import Header from '../components/header';
+
+export default () => (
+  <Layout>
+    <h1>Home</h1>
+    <p>Hello Minnesota!</p>
+    <Link to="/about/">Learn about me &rarr;</Link>
+  </Layout>
+);
